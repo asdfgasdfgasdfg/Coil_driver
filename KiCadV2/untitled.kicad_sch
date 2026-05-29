@@ -918,11 +918,17 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 153.67 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "19fddc35-00bd-4fba-808c-ddff04ccf2aa")
+	(text "~20mA"
+		(exclude_from_sim no)
+		(at 88.9 58.928 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "df7e6f03-9066-445a-927a-8a1db0fcb63c")
 	)
 	(junction
 		(at 110.49 127)
@@ -943,6 +949,12 @@
 		(uuid "7469fe99-1d30-4a90-b4be-aaf0a25d0207")
 	)
 	(junction
+		(at 134.62 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "825447ca-ee72-48b8-8550-44ee024fd4c4")
+	)
+	(junction
 		(at 110.49 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -953,12 +965,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c6f6985-ee10-4705-be3d-d90ae6951bf0")
-	)
-	(junction
-		(at 146.05 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9dfd024c-b9f7-413a-b8cd-cb2db2839ac7")
 	)
 	(junction
 		(at 153.67 74.93)
@@ -1012,7 +1018,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 129.54) (xy 161.29 129.54)
+			(xy 152.4 129.54) (xy 161.29 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1102,6 +1108,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 74.93) (xy 135.89 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c238c14-1514-4f9c-9429-d5ac461c564d")
+	)
+	(wire
+		(pts
 			(xy 110.49 118.11) (xy 110.49 127)
 		)
 		(stroke
@@ -1149,16 +1165,6 @@
 			(type default)
 		)
 		(uuid "6e947a83-39d0-4ec4-9f2c-3f6696d9188f")
-	)
-	(wire
-		(pts
-			(xy 152.4 129.54) (xy 153.67 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70c27902-7dee-4a65-a88b-2087486dfde5")
 	)
 	(wire
 		(pts
@@ -1222,16 +1228,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 74.93) (xy 153.67 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b79d35ab-c968-45a0-bcee-12a14a718bd9")
-	)
-	(wire
-		(pts
 			(xy 110.49 118.11) (xy 121.92 118.11)
 		)
 		(stroke
@@ -1282,7 +1278,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 74.93) (xy 146.05 74.93)
+			(xy 143.51 74.93) (xy 153.67 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1352,7 +1348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "031bf5c7-b9ba-4b8f-8be8-933c0ec29d4f")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0101"
 			(at 149.86 88.9 0)
 			(effects
 				(font
@@ -1402,7 +1398,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0118")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -1418,7 +1414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08827bbb-06c4-4592-a8c1-719bdea3ce5b")
-		(property "Reference" "U32"
+		(property "Reference" "U29"
 			(at 83.82 95.2499 0)
 			(effects
 				(font
@@ -1463,6 +1459,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7377"
+			(at 85.09 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "6ccb4863-25cb-45dd-a47e-017856cb52e9")
 		)
@@ -1490,7 +1495,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "U32")
+					(reference "U29")
 					(unit 3)
 				)
 			)
@@ -1507,7 +1512,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ac7f300-01e0-44af-9804-2cd9deb754c6")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0100"
 			(at 111.76 92.71 0)
 			(effects
 				(font
@@ -1557,7 +1562,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0117")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -1573,7 +1578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ad2bfd0-901c-4709-97fc-634f0c571811")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0102"
 			(at 157.48 143.51 0)
 			(effects
 				(font
@@ -1623,76 +1628,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 153.67 133.35 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2c76196b-f538-4946-b65c-10bea4c154dd")
-		(property "Reference" "C42"
-			(at 157.48 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 157.48 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 152.7048 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 153.67 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c4b9c4a-5ce6-484c-86aa-307676aab6de")
-		)
-		(pin "2"
-			(uuid "6630d3fe-dc26-4918-90a4-fa248ac98ec0")
-		)
-		(instances
-			(project "KiCadV2"
-				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "C42")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -1708,7 +1644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f5d5a93-5366-4eaa-a8d7-decb093a2848")
-		(property "Reference" "R50"
+		(property "Reference" "R44"
 			(at 114.3 63.4999 0)
 			(effects
 				(font
@@ -1753,6 +1689,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1768e3d1-912c-478b-8f33-23c92c2cdf72")
 		)
@@ -1762,7 +1707,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R50")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -1779,7 +1724,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32647798-d0a8-4f61-b216-fc8445d1df47")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR095"
 			(at 82.55 92.71 0)
 			(effects
 				(font
@@ -1829,7 +1774,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0112")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -1845,7 +1790,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bb89808-58c5-41f1-9cef-39204320fe93")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR096"
 			(at 82.55 110.49 0)
 			(effects
 				(font
@@ -1895,7 +1840,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0113")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -1912,7 +1857,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d0ab543-cfd2-4b02-86d1-3a7afc4d4f1b")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR098"
 			(at 110.49 142.24 0)
 			(effects
 				(font
@@ -1962,7 +1907,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0115")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -1978,7 +1923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42836c5a-e80e-4edc-b8b1-1df8a5bd820b")
-		(property "Reference" "U33"
+		(property "Reference" "U30"
 			(at 113.03 129.5399 90)
 			(effects
 				(font
@@ -2025,6 +1970,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C3113"
+			(at 110.49 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "83e5f151-602c-4052-869b-f5e6b2fe7bfa")
 		)
@@ -2037,7 +1991,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "U33")
+					(reference "U30")
 					(unit 1)
 				)
 			)
@@ -2053,7 +2007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a6584e5-4ba9-4f81-a5b3-a6440c312a0f")
-		(property "Reference" "R53"
+		(property "Reference" "R47"
 			(at 124.46 130.8099 0)
 			(effects
 				(font
@@ -2062,7 +2016,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "800"
+		(property "Value" "820"
 			(at 124.46 133.3499 0)
 			(effects
 				(font
@@ -2098,6 +2052,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23253"
+			(at 121.92 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "17d65578-10a9-47e2-810e-f28127481a87")
 		)
@@ -2107,7 +2070,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R53")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -2123,7 +2086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7460e790-2a9d-43de-bda5-4aea45d744ba")
-		(property "Reference" "R51"
+		(property "Reference" "R45"
 			(at 114.3 78.7399 0)
 			(effects
 				(font
@@ -2168,6 +2131,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 111.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ab3bc539-510d-4df4-ba00-2d587c4507e9")
 		)
@@ -2177,7 +2149,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R51")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -2193,7 +2165,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7549d436-679f-4c38-8083-9dbf5dff15db")
-		(property "Reference" "R49"
+		(property "Reference" "R43"
 			(at 113.03 111.7599 0)
 			(effects
 				(font
@@ -2202,7 +2174,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "250"
+		(property "Value" "200"
 			(at 113.03 114.2999 0)
 			(effects
 				(font
@@ -2211,7 +2183,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 108.712 113.03 90)
 			(effects
 				(font
@@ -2238,6 +2210,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17540"
+			(at 110.49 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "61a74550-9148-4e61-bede-c69dc3f72a8c")
 		)
@@ -2247,7 +2228,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R49")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -2263,7 +2244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "886010e1-3dc6-48b6-ac2f-c0774e35facd")
-		(property "Reference" "R55"
+		(property "Reference" "R49"
 			(at 148.59 123.19 90)
 			(effects
 				(font
@@ -2306,6 +2287,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22775"
+			(at 148.59 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1c5378f0-151e-4fc6-ab5c-f6db5f30ca7b")
 		)
@@ -2315,7 +2305,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R55")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -2331,7 +2321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88e45ecd-8259-48ee-9945-d5e248ac3960")
-		(property "Reference" "R52"
+		(property "Reference" "R46"
 			(at 124.46 120.6499 0)
 			(effects
 				(font
@@ -2340,7 +2330,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "9200"
+		(property "Value" "9.1k"
 			(at 124.46 123.1899 0)
 			(effects
 				(font
@@ -2376,6 +2366,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23260"
+			(at 121.92 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1927d6be-a9e8-4449-a649-b9e7494d25f0")
 		)
@@ -2385,7 +2384,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R52")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -2401,7 +2400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c107ea4-3100-4e19-897d-5e9d3e6ac0eb")
-		(property "Reference" "U32"
+		(property "Reference" "U29"
 			(at 127 64.77 0)
 			(effects
 				(font
@@ -2444,6 +2443,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7377"
+			(at 127 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "6ccb4863-25cb-45dd-a47e-017856cb52ea")
 		)
@@ -2471,7 +2479,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "U32")
+					(reference "U29")
 					(unit 1)
 				)
 			)
@@ -2487,7 +2495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a71789fb-e92a-4f6d-b68c-27c449e6894c")
-		(property "Reference" "C41"
+		(property "Reference" "C33"
 			(at 157.48 77.4699 0)
 			(effects
 				(font
@@ -2532,6 +2540,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23630"
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3fb91993-57f7-4469-aab3-248efec92c3f")
 		)
@@ -2541,7 +2558,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "C41")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -2557,7 +2574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae6861e1-948a-4a60-96e0-c66997bda019")
-		(property "Reference" "C43"
+		(property "Reference" "C34"
 			(at 165.1 132.0799 0)
 			(effects
 				(font
@@ -2602,6 +2619,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23630"
+			(at 161.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "572ee2fe-8f09-434d-a783-987e1c37a791")
 		)
@@ -2611,76 +2637,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "C43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 146.05 78.74 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b939054f-9128-4d25-9041-add3ab9332e0")
-		(property "Reference" "C40"
-			(at 149.86 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 149.86 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 145.0848 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 146.05 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db3184b4-9e82-4855-8de8-fa9530cd4b90")
-		)
-		(pin "2"
-			(uuid "26b0167a-5256-4e3e-9e3a-1205f97a4545")
-		)
-		(instances
-			(project "KiCadV2"
-				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "C40")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -2696,7 +2653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be289d75-e0af-4e9f-9939-8b954bef2326")
-		(property "Reference" "R54"
+		(property "Reference" "R48"
 			(at 139.7 68.58 90)
 			(effects
 				(font
@@ -2739,6 +2696,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22775"
+			(at 139.7 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dbaef1de-6997-4687-b111-8703d523463e")
 		)
@@ -2748,7 +2714,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "R54")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -2765,7 +2731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5bafaea-ae89-4b13-af7b-b536f58bde75")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR097"
 			(at 110.49 110.49 0)
 			(effects
 				(font
@@ -2815,7 +2781,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0114")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -2831,7 +2797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dab984d2-5db6-44dd-ac3b-e6633896354d")
-		(property "Reference" "U32"
+		(property "Reference" "U29"
 			(at 137.16 119.38 0)
 			(effects
 				(font
@@ -2874,6 +2840,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7377"
+			(at 137.16 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "48ca4d40-29b8-42af-bc3f-b89b196c3f7f")
 		)
@@ -2901,7 +2876,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "U32")
+					(reference "U29")
 					(unit 2)
 				)
 			)
@@ -2918,7 +2893,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e416239d-e5a7-420b-8b1b-abeff6c3f155")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR099"
 			(at 111.76 63.5 0)
 			(effects
 				(font
@@ -2968,7 +2943,7 @@
 		(instances
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0116")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
