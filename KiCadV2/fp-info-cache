@@ -1,4 +1,4 @@
-26745699851801678
+26756380710423657
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62671,6 +62671,27 @@ heatsink
 0
 0
 Inductor_SMD
+6.8uH C5127257
+
+
+0
+2
+2
+Inductor_SMD
+6.8uH C5127257_1
+
+
+0
+2
+2
+Inductor_SMD
+10uH C15029
+
+
+0
+2
+2
+Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
 Choke SMD
@@ -67136,6 +67157,13 @@ air coil inductor wurth we cair
 0
 2
 2
+Inductor_SMD
+Untitled
+
+
+0
+0
+0
 Inductor_SMD_Wurth
 L_Wurth_WE-LQSH-2010
 Semi-Shielded High Saturation Power Inductor, body 2x1.6mm, https://www.we-online.com/catalog/en/WE-LQSH#/articles/WE-LQSH-2010
@@ -104391,6 +104419,13 @@ screw terminal thread redcube thr power connector
 18
 1
 TestPoint
+SPDT_solder_bridge
+
+
+0
+3
+3
+TestPoint
 TestPoint_2Pads_Pitch2.54mm_Drill0.8mm
 Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm
 CONN DEV
@@ -104789,6 +104824,13 @@ test point THT pad
 0
 1
 1
+TestPoint
+Untitled
+
+
+0
+3
+3
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)
