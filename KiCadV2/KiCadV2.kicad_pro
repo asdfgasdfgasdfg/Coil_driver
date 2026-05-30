@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +186,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        3.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +217,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -475,17 +490,21 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.3,
         "name": "HF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
         "wire_width": 6
       },
       {
+        "clearance": 0.2,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 3.0,
         "wire_width": 10
       }
     ],
@@ -493,7 +512,109 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/+OUT1": [
+        "HF",
+        "Power"
+      ],
+      "/+OUT2": [
+        "HF",
+        "Power"
+      ],
+      "/-OUT1": [
+        "HF",
+        "Power"
+      ],
+      "/-OUT2": [
+        "HF",
+        "Power"
+      ],
+      "/PWM5": [
+        "HF"
+      ],
+      "/PerCoil/AH": [
+        "HF"
+      ],
+      "/PerCoil/AL": [
+        "HF"
+      ],
+      "/PerCoil/BH": [
+        "HF"
+      ],
+      "/PerCoil/BHS": [
+        "HF",
+        "Power"
+      ],
+      "/PerCoil/BL": [
+        "HF"
+      ],
+      "/PerCoil/OC_SENSE": [
+        "HF",
+        "Power"
+      ],
+      "/PerCoil/SignalProcessingChain/DIR": [
+        "HF"
+      ],
+      "/PerCoil/SignalProcessingChain/DIS": [
+        "HF"
+      ],
+      "/PerCoil/SignalProcessingChain/EN": [
+        "HF"
+      ],
+      "/PerCoil/SignalProcessingChain/HEN": [
+        "HF"
+      ],
+      "/PerCoil/SignalProcessingChain/HF PWM": [
+        "HF"
+      ],
+      "/PerCoil/~{OC1}": [
+        "HF"
+      ],
+      "/PerCoil1/AH": [
+        "HF"
+      ],
+      "/PerCoil1/AL": [
+        "HF"
+      ],
+      "/PerCoil1/BH": [
+        "HF"
+      ],
+      "/PerCoil1/BHS": [
+        "HF",
+        "Power"
+      ],
+      "/PerCoil1/BL": [
+        "HF"
+      ],
+      "/PerCoil1/OC_SENSE": [
+        "HF",
+        "Power"
+      ],
+      "/PerCoil1/SignalProcessingChain/DIR": [
+        "HF"
+      ],
+      "/PerCoil1/SignalProcessingChain/DIS": [
+        "HF"
+      ],
+      "/PerCoil1/SignalProcessingChain/EN": [
+        "HF"
+      ],
+      "/PerCoil1/SignalProcessingChain/HEN": [
+        "HF"
+      ],
+      "/PerCoil1/SignalProcessingChain/HF PWM": [
+        "HF"
+      ],
+      "/PerCoil1/~{OC1}": [
+        "HF"
+      ],
+      "/Vsq": [
+        "HF"
+      ],
+      "/Vtri": [
+        "HF"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

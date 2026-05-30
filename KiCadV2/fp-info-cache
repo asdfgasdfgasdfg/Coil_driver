@@ -1,4 +1,4 @@
-26756380710423657
+26756385751216764
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62678,13 +62678,6 @@ Inductor_SMD
 2
 2
 Inductor_SMD
-6.8uH C5127257_1
-
-
-0
-2
-2
-Inductor_SMD
 10uH C15029
 
 
@@ -70771,6 +70764,13 @@ Arduino UNO R2
 30
 Module
 Arduino_UNO_R3
+Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+Arduino UNO R3
+0
+32
+32
+Module
+Arduino_UNO_R3_ConnOnly
 Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
 Arduino UNO R3
 0

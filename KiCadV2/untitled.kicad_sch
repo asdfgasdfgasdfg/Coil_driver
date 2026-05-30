@@ -937,12 +937,6 @@
 		(uuid "545cf9cd-2ffe-47dc-95b8-21567862fd09")
 	)
 	(junction
-		(at 161.29 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f172365-5310-4128-9d79-7187adc1458a")
-	)
-	(junction
 		(at 110.49 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -990,12 +984,6 @@
 		(color 0 0 0 0)
 		(uuid "cf84079f-7507-4fe9-adcc-3064f80a2dab")
 	)
-	(junction
-		(at 157.48 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1516689-a031-4603-8a1f-fca98d57e03e")
-	)
 	(wire
 		(pts
 			(xy 146.05 82.55) (xy 149.86 82.55)
@@ -1008,17 +996,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 137.16) (xy 157.48 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04a23cdf-1533-48f4-9349-c95e3e6a6430")
-	)
-	(wire
-		(pts
-			(xy 152.4 129.54) (xy 161.29 129.54)
+			(xy 152.4 129.54) (xy 165.1 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1145,16 +1123,6 @@
 			(type default)
 		)
 		(uuid "6396af69-d9f4-4fc1-b611-1518290f2901")
-	)
-	(wire
-		(pts
-			(xy 161.29 129.54) (xy 165.1 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65bd36e5-5b26-4789-87a6-1fb76a02de0e")
 	)
 	(wire
 		(pts
@@ -1295,16 +1263,6 @@
 			(type default)
 		)
 		(uuid "f337b5c5-6089-4eeb-9a93-f055ace34ff3")
-	)
-	(wire
-		(pts
-			(xy 157.48 137.16) (xy 161.29 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f50f1cdd-5db4-4638-a50a-010652dc0a2b")
 	)
 	(wire
 		(pts
@@ -1563,72 +1521,6 @@
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
 					(reference "#PWR0100")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 157.48 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ad2bfd0-901c-4709-97fc-634f0c571811")
-		(property "Reference" "#PWR0102"
-			(at 157.48 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 157.48 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d44be6e-3f17-4f73-bf96-76cdd77a16b5")
-		)
-		(instances
-			(project "KiCadV2"
-				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -2559,85 +2451,6 @@
 			(project "KiCadV2"
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
 					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 161.29 133.35 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae6861e1-948a-4a60-96e0-c66997bda019")
-		(property "Reference" "C30"
-			(at 165.1 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2.2u"
-			(at 165.1 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 160.3248 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 161.29 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C23630"
-			(at 161.29 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "572ee2fe-8f09-434d-a783-987e1c37a791")
-		)
-		(pin "2"
-			(uuid "c58d4f9b-4a3c-4d4f-b271-77965dcfc20e")
-		)
-		(instances
-			(project "KiCadV2"
-				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/119d2b89-5afc-44da-b120-a3e681adcba0"
-					(reference "C30")
 					(unit 1)
 				)
 			)
