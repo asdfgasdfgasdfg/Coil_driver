@@ -5177,7 +5177,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 128.27 144.78 180)
+		(at 128.27 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5186,7 +5186,7 @@
 		(fields_autoplaced yes)
 		(uuid "8100ef18-45e9-4ecf-ba0f-bd273aaf4679")
 		(property "Reference" "R19"
-			(at 130.81 143.5099 0)
+			(at 130.81 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5195,7 +5195,7 @@
 			)
 		)
 		(property "Value" "390"
-			(at 130.81 146.0499 0)
+			(at 130.81 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,7 +5204,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 130.048 144.78 90)
+			(at 130.048 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,7 +5213,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 144.78 0)
+			(at 128.27 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,7 +5222,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 128.27 144.78 0)
+			(at 128.27 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +5231,7 @@
 			)
 		)
 		(property "LCSC" "C23151"
-			(at 128.27 144.78 90)
+			(at 128.27 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5330,7 +5330,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 128.27 137.16 90)
+		(at 128.27 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5339,7 +5339,7 @@
 		(fields_autoplaced yes)
 		(uuid "84ead44f-4a5a-49e3-8537-abf6931031d0")
 		(property "Reference" "D8"
-			(at 132.08 137.4774 90)
+			(at 132.08 145.0974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5348,7 +5348,7 @@
 			)
 		)
 		(property "Value" "KT-0603W"
-			(at 132.08 140.0174 90)
+			(at 132.08 147.6374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5357,7 +5357,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 128.27 137.16 0)
+			(at 128.27 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5366,7 +5366,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 137.16 0)
+			(at 128.27 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5375,7 +5375,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 128.27 137.16 0)
+			(at 128.27 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5384,7 +5384,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 137.16 0)
+			(at 128.27 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5393,7 +5393,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 128.27 137.16 90)
+			(at 128.27 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +5514,7 @@
 				)
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/f02a2755-f567-4341-908d-fd74a8795e3c"
 					(reference "U26")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
@@ -5612,7 +5612,7 @@
 				)
 				(path "/e7727714-8b02-4dc5-9ae4-9abf282a37e0/f02a2755-f567-4341-908d-fd74a8795e3c"
 					(reference "U26")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -6464,6 +6464,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "eb6ade2c-867b-45d2-8de0-c582648157dc")
 		(property "Reference" "U22"
 			(at 138.43 49.53 0)
