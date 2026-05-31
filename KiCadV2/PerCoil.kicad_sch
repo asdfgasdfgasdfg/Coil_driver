@@ -3385,6 +3385,16 @@
 			)
 		)
 	)
+	(label "LminToRsense"
+		(at 168.91 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30cd608f-48de-41ab-aab5-7b21ebefb0a7")
+	)
 	(label "OC_SENSE"
 		(at 85.09 143.51 270)
 		(fields_autoplaced yes)
