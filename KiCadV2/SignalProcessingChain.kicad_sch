@@ -2331,6 +2331,16 @@
 		)
 		(uuid "109553a5-291e-49c1-87d8-ab8313459197")
 	)
+	(text "Coil1 & Coil2 PWM is 180 phase offset. This way, Coil1 is \ngenerally on when Coil2 is off and vice versa.\nSo overall current ripple, reverse current, etc is minimised.\n\nCoil2 Needs low DAC value for high PWM, vice versa for Coil1.\n\n"
+		(exclude_from_sim no)
+		(at 62.23 136.144 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1844ece4-ae2e-4d73-a7f0-e1a6bb77d987")
+	)
 	(text "Mosfet/h-bridge driver"
 		(exclude_from_sim no)
 		(at 245.618 16.764 0)
@@ -2422,12 +2432,6 @@
 		(uuid "578661f5-6569-4b51-b707-e49730418e8c")
 	)
 	(junction
-		(at 54.61 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68da8453-8fc6-4ffd-8524-b065b6eda06c")
-	)
-	(junction
 		(at 99.06 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2452,7 +2456,7 @@
 		(uuid "942f8f29-cefd-4079-a5e1-7a431b04f91e")
 	)
 	(junction
-		(at 45.72 101.6)
+		(at 45.72 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b604fbf-4212-4534-b445-f6b54e6d55c8")
@@ -2482,7 +2486,13 @@
 		(uuid "c7b61f50-6142-424a-ac89-21d2a5b1e704")
 	)
 	(junction
-		(at 45.72 113.03)
+		(at 54.61 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0181a25-bb2c-48d9-a8cd-1881affc7019")
+	)
+	(junction
+		(at 45.72 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9366178-da35-4813-9d08-992811f5c93a")
@@ -2597,7 +2607,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 101.6) (xy 45.72 101.6)
+			(xy 40.64 106.68) (xy 45.72 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2637,7 +2647,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 101.6) (xy 45.72 104.14)
+			(xy 45.72 106.68) (xy 45.72 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2697,7 +2707,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 101.6) (xy 54.61 101.6)
+			(xy 45.72 106.68) (xy 54.61 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2747,7 +2757,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 99.06) (xy 45.72 101.6)
+			(xy 45.72 104.14) (xy 45.72 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2837,7 +2847,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 113.03) (xy 54.61 113.03)
+			(xy 45.72 118.11) (xy 54.61 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3007,7 +3017,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 87.63) (xy 45.72 91.44)
+			(xy 45.72 92.71) (xy 45.72 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3037,7 +3047,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 101.6) (xy 33.02 101.6)
+			(xy 29.21 106.68) (xy 33.02 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3047,7 +3057,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 113.03) (xy 45.72 115.57)
+			(xy 45.72 118.11) (xy 45.72 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3057,7 +3067,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 111.76) (xy 45.72 113.03)
+			(xy 45.72 116.84) (xy 45.72 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3107,7 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 101.6) (xy 66.04 101.6)
+			(xy 54.61 106.68) (xy 66.04 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3157,7 +3167,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 113.03) (xy 54.61 109.22)
+			(xy 54.61 118.11) (xy 54.61 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3487,7 +3497,7 @@
 	)
 	(hierarchical_label "DACIN"
 		(shape input)
-		(at 29.21 101.6 180)
+		(at 29.21 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3498,7 +3508,7 @@
 	)
 	(hierarchical_label "Vtri"
 		(shape input)
-		(at 66.04 106.68 180)
+		(at 66.04 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3508,7 +3518,7 @@
 		)
 		(uuid "7605e24a-7cd2-40db-ac82-286416939f7a")
 		(property "Netclass" "HF"
-			(at 66.04 107.95 0)
+			(at 66.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,10 +3670,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8fc670d0-8855-4580-9924-2fbe75d027df")
+			(uuid "cf2b4813-d877-4e9f-b1a9-63cd0bf6d0bc")
 		)
 		(pin "1"
-			(uuid "4eca28c7-3ad5-48fb-a1b2-8ef467a308d1")
+			(uuid "0c8060dd-2e2e-4166-8faf-b57ce2e69bb0")
 		)
 		(instances
 			(project "KiCadV2"
@@ -3734,7 +3744,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "37c70683-4d01-44da-9795-c63ca87c771e")
+			(uuid "c7b72c1b-6fd0-404f-9e8b-687c1fc974e2")
 		)
 		(instances
 			(project "KiCadV2"
@@ -3814,10 +3824,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "e09ea26d-122b-4217-9d99-2dd2ecf7739d")
+			(uuid "a947d35b-d53e-43a9-9758-42cc0f0616b3")
 		)
 		(pin "1"
-			(uuid "75a5666a-78f3-439f-a5a1-3558482f95a4")
+			(uuid "af83231b-5f6d-4ea2-8579-873c3fa33e72")
 		)
 		(instances
 			(project "KiCadV2"
@@ -3888,7 +3898,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "95a9e405-28c0-43d8-b0cd-a9837ae73c8b")
+			(uuid "db3b75d7-d77d-4f4f-b787-a59ff23cad7e")
 		)
 		(instances
 			(project "KiCadV2"
@@ -3966,22 +3976,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "9ba74308-1e33-4a35-9864-211d9f63bc89")
+			(uuid "d4ba4b60-6052-49fe-89ff-75d079efb6a1")
 		)
 		(pin "5"
-			(uuid "5b1b542a-762d-414f-aac2-6c3a6178a8a6")
+			(uuid "325dee0c-4006-4d8b-86f8-cd83efa6e35c")
 		)
 		(pin "4"
-			(uuid "80940ffa-245a-4b90-a6be-11f31f8d5403")
+			(uuid "4f7ae8d5-c0c7-49f0-9303-764c23e39c80")
 		)
 		(pin "3"
-			(uuid "7ff282d9-c307-47b8-b43e-f1e2cf355db4")
+			(uuid "c1a7bb8d-90c2-400b-b818-77897639d56e")
 		)
 		(pin "2"
-			(uuid "5375df76-1c5a-4280-938c-9f0163157bb6")
+			(uuid "a862a3b0-7119-4977-854e-59858e2dac41")
 		)
 		(pin "1"
-			(uuid "7801346c-fa47-4c5a-a27c-59a716b77f52")
+			(uuid "62e332c8-13a0-450f-9da5-6bd7b4c37f05")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4070,10 +4080,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "53fd4395-d619-45d9-9a21-7a1f44871fa6")
+			(uuid "f8862474-1373-4fec-97b4-5f80ebcf53e4")
 		)
 		(pin "2"
-			(uuid "520b599f-8212-43a3-99df-8d0da3eaa2e3")
+			(uuid "9f95bec7-4f25-4772-95ba-d98fda505bdf")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4151,22 +4161,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "1398d0a8-877d-4f11-9b50-f85b5b57799e")
+			(uuid "6caf4669-de68-4c0b-916b-6b292c1d0257")
 		)
 		(pin "5"
-			(uuid "fe257122-8bd8-48a8-ac6d-e7348a84eba7")
+			(uuid "9adbfcfb-f428-4c63-9828-437d98adf477")
 		)
 		(pin "4"
-			(uuid "b83d1bd1-0f54-4f90-b591-e24030ca43dc")
+			(uuid "acec831a-4644-4949-b362-594822575723")
 		)
 		(pin "3"
-			(uuid "08e9666b-09b5-4a5f-aa59-5d272600ed6e")
+			(uuid "2d26d84e-c5b1-42d9-b798-cc47fc82a1a8")
 		)
 		(pin "2"
-			(uuid "353e45e2-2c77-4e3b-b822-b5dc124732eb")
+			(uuid "9515b96a-9967-401d-bfc6-aa642bfa35d5")
 		)
 		(pin "1"
-			(uuid "03e7bbf3-13db-461f-8217-316cf16a0a3d")
+			(uuid "d14f8e97-cfc1-4060-a00c-ad5b9b709bee")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4246,10 +4256,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "208090f2-93f6-4937-80ae-3a9c9f1ebe02")
+			(uuid "d728eb3a-3d0b-4b42-8941-0ac43e2a7cab")
 		)
 		(pin "1"
-			(uuid "5b8d881b-7719-40a7-b8c3-9026b4df7694")
+			(uuid "d5ec943d-5c69-4529-a64e-5188d109bf49")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4320,7 +4330,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b87d4ff5-4ed4-4f68-b870-d2e37235d979")
+			(uuid "847d790c-c2a3-40dd-8dbf-a836ff78a7b9")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4391,7 +4401,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a76ec724-b4e8-4e4b-8982-2f5132677c83")
+			(uuid "920263f9-28ca-4c75-bcf9-7bd6a5bf4219")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4462,7 +4472,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4e20d52d-89f7-494f-9445-c6aa3da6cedb")
+			(uuid "188fc5fb-71a6-4111-b0f6-d1d70a2b74b0")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4479,7 +4489,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 45.72 87.63 0)
+		(at 45.72 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4488,7 +4498,7 @@
 		(fields_autoplaced yes)
 		(uuid "36520c6e-dab3-4047-94d6-81a237c0cd03")
 		(property "Reference" "#PWR027"
-			(at 45.72 91.44 0)
+			(at 45.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4497,7 +4507,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 45.72 82.55 0)
+			(at 45.72 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +4515,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 87.63 0)
+			(at 45.72 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4514,7 +4524,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 87.63 0)
+			(at 45.72 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,7 +4533,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 45.72 87.63 0)
+			(at 45.72 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4532,7 +4542,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "78a7d59d-6f66-404b-a810-fca87a3d7164")
+			(uuid "5787dc1b-bcad-4206-91a3-3391a6aa0f71")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4602,7 +4612,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e710c015-8795-44b3-87df-4098c810d8ae")
+			(uuid "fed77241-c72e-4621-a8ee-58140a5a3e7a")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4686,13 +4696,13 @@
 			(uuid "d24a6d95-cf96-45a3-b8b5-16172ac30cc3")
 		)
 		(pin "7"
-			(uuid "fdd692b7-2d8e-4567-ae12-8c22705a39b6")
+			(uuid "5e1f26cb-c81b-4a7e-978f-577d75909af6")
 		)
 		(pin "1"
-			(uuid "244e2e5c-3da3-401c-8345-8d1767bbe4bb")
+			(uuid "453469dd-0b4f-4d1b-8b8d-274e0010a2be")
 		)
 		(pin "2"
-			(uuid "1b5de2cd-de12-443f-88ea-3aa54bf40dd0")
+			(uuid "048be996-24cc-41d2-90b7-c2f1e2c5bac3")
 		)
 		(pin "6"
 			(uuid "315f889a-5f4d-4082-94de-78e217303a18")
@@ -4772,7 +4782,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f45aa2b0-310e-4973-a3b1-5accce24629f")
+			(uuid "bb24d8c3-8aeb-4d65-b7b6-476a2dbbd1cf")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4789,7 +4799,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 115.57 0)
+		(at 45.72 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4798,7 +4808,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c04d6f1-dd63-49f7-9398-cf8808b01c6f")
 		(property "Reference" "#PWR028"
-			(at 45.72 121.92 0)
+			(at 45.72 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,7 +4817,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 120.65 0)
+			(at 45.72 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4815,7 +4825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 115.57 0)
+			(at 45.72 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4824,7 +4834,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 115.57 0)
+			(at 45.72 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4833,7 +4843,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 115.57 0)
+			(at 45.72 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4842,7 +4852,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "59c44fdf-a304-461a-a6ba-e06928ec7a19")
+			(uuid "0d7d41d8-1a79-49df-a94e-6482ccba807f")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4912,7 +4922,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "596aeae9-f6b2-4264-b355-31f4419a6d17")
+			(uuid "8967d22e-2c27-4aed-b1d3-c8e16cbd4346")
 		)
 		(instances
 			(project "KiCadV2"
@@ -4992,10 +5002,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e652558d-2d33-4945-91b4-e098b0958c6d")
+			(uuid "3cd8d9e2-20dd-43d8-a6c0-99f60e3563e1")
 		)
 		(pin "2"
-			(uuid "ded1e201-894d-4e1a-babb-79cdf1915a57")
+			(uuid "09b603ae-721d-4bf4-b774-c8db6c6dc4bc")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5021,7 +5031,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e6eb77f-d2d5-42a3-aa80-71a9ecb825bd")
 		(property "Reference" "U14"
-			(at 231.1511 127 0)
+			(at 231.151 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5029,7 +5039,7 @@
 			)
 		)
 		(property "Value" "74LV08AT14-13"
-			(at 231.1511 124.46 0)
+			(at 231.151 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5085,7 +5095,7 @@
 			(uuid "403c3733-86bd-4d60-9c08-a276c4ef86ca")
 		)
 		(pin "3"
-			(uuid "0f1428b2-35e9-41bf-9e37-c10027cfa66a")
+			(uuid "6e352146-c2d4-4cd6-b589-9e18bd5b7031")
 		)
 		(pin "8"
 			(uuid "68fd75a5-6900-442f-bf0f-f331165e36b9")
@@ -5097,7 +5107,7 @@
 			(uuid "1c371e78-2e08-4afe-b4f3-ca2fd1578937")
 		)
 		(pin "2"
-			(uuid "698feede-b751-4297-931b-40f044b828b9")
+			(uuid "0f57ef8e-e193-43d4-8a98-baea5d03883f")
 		)
 		(pin "10"
 			(uuid "28f10cb4-235a-4f13-887e-9c8fbbeea6f5")
@@ -5106,7 +5116,7 @@
 			(uuid "3b3db408-528d-428d-88e2-79aad709171b")
 		)
 		(pin "1"
-			(uuid "65f3f9a1-65f9-4a98-94e6-212910674ff2")
+			(uuid "41fe8875-2317-42ef-978d-be6de17b3052")
 		)
 		(pin "13"
 			(uuid "7a92b266-b5f1-41e0-8da4-99ce904aaf9e")
@@ -5185,7 +5195,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "240318b4-c59f-4b93-bf0b-adfaf243ccbb")
+			(uuid "18a386a2-7ca9-41b9-97bd-6807630db214")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5202,7 +5212,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 36.83 101.6 90)
+		(at 36.83 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5211,7 +5221,7 @@
 		(fields_autoplaced yes)
 		(uuid "78e4776e-5ef4-4881-b2e5-f3694fa3d590")
 		(property "Reference" "R10"
-			(at 36.83 95.25 90)
+			(at 36.83 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,7 +5229,7 @@
 			)
 		)
 		(property "Value" "2700"
-			(at 36.83 97.79 90)
+			(at 36.83 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,7 +5237,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 36.83 103.378 90)
+			(at 36.83 108.458 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5236,7 +5246,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 101.6 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5245,7 +5255,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 36.83 101.6 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,7 +5264,7 @@
 			)
 		)
 		(property "LCSC" "C13167"
-			(at 36.83 101.6 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,10 +5273,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "606bd78e-7ca8-4a06-a234-67f6760b229f")
+			(uuid "7d7077ac-6192-497d-af33-3ad37dc1b9a9")
 		)
 		(pin "2"
-			(uuid "d69705bb-8b24-4e45-87a5-71864c9664d6")
+			(uuid "c1662ccb-786b-4dca-937e-7da3c5ffd9ae")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5337,7 +5347,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "69f74365-eb63-4e6e-83ba-f244a4a9566c")
+			(uuid "d4b82fd1-e836-4a92-8106-7184bfdb5997")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5417,10 +5427,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7896072-520b-47fe-b52c-d6a1f847a3a0")
+			(uuid "26901fc7-67e6-4514-a3a0-b2766dd7097f")
 		)
 		(pin "2"
-			(uuid "0bb314bd-fbd5-4241-847f-0825caac19c1")
+			(uuid "9bab3ad2-46b9-4410-a4b4-4617fb7a957a")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5498,22 +5508,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "5ccd2eb1-4ac9-4068-9e0a-586a58c51ab2")
+			(uuid "98f50359-c26b-4439-ad43-60b3da3b7389")
 		)
 		(pin "5"
-			(uuid "7f32fda1-3b04-4a10-ae3a-b02a3b7a92b8")
+			(uuid "0d7c85f7-353a-4265-83c0-ff8af2e2f42e")
 		)
 		(pin "4"
-			(uuid "2ab59b00-8543-4049-8056-b5abd6b6f8fc")
+			(uuid "c4c73097-fdc3-479b-ac4b-98a841f3815c")
 		)
 		(pin "3"
-			(uuid "87698667-8228-4a21-87df-db22c05ed941")
+			(uuid "a0f6017e-a4f7-49d4-91a5-7f7d660a399c")
 		)
 		(pin "2"
-			(uuid "28de8f48-2ab8-4d99-9989-6740c9637d42")
+			(uuid "01935e50-69f1-4b5b-830c-c1ff12254722")
 		)
 		(pin "1"
-			(uuid "2c619770-2abd-4afe-878c-df308008129c")
+			(uuid "c5f204d6-ad06-4e54-a8ca-f9a7a2612b26")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5584,7 +5594,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e83f0bf-1a6a-48b4-8fd7-ecebfad9cf09")
+			(uuid "3edaf135-bc89-435b-9023-8272f83c5331")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5654,7 +5664,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "fafb2f22-c4c9-4bb4-817f-be299bb78dd4")
+			(uuid "9744918f-4dc0-42c9-96f7-8c466fee7369")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5724,7 +5734,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e79031f5-8bea-4e1d-86f0-374696a74695")
+			(uuid "d7ab942f-ddc0-45f5-aa1f-269503f7e1d3")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5804,10 +5814,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "15244277-8771-477e-8bbc-0208d48b410a")
+			(uuid "ec766983-b8c3-412e-b440-e9b522ccd9db")
 		)
 		(pin "1"
-			(uuid "ea6c5a9f-f531-4b18-95ea-d634f727d012")
+			(uuid "e1a168f8-4886-45bf-9e72-e3089a80c0e8")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5878,7 +5888,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "56d71832-19fa-4ba7-9306-65d29d28bea6")
+			(uuid "1729e97f-2b76-41ba-b848-8f6f0224b396")
 		)
 		(instances
 			(project "KiCadV2"
@@ -5895,7 +5905,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 45.72 107.95 180)
+		(at 45.72 113.03 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5904,7 +5914,7 @@
 		(fields_autoplaced yes)
 		(uuid "99f06597-e7f0-48a7-9636-4d314f410fab")
 		(property "Reference" "R12"
-			(at 48.26 106.6799 0)
+			(at 48.26 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5913,7 +5923,7 @@
 			)
 		)
 		(property "Value" "2000"
-			(at 48.26 109.2199 0)
+			(at 48.26 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5922,7 +5932,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 47.498 107.95 90)
+			(at 47.498 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5931,7 +5941,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 107.95 0)
+			(at 45.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5940,7 +5950,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 45.72 107.95 0)
+			(at 45.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,7 +5959,7 @@
 			)
 		)
 		(property "LCSC" "C22975"
-			(at 45.72 107.95 0)
+			(at 45.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5958,10 +5968,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "23a43100-119c-47d9-bf0d-26f86f56af4d")
+			(uuid "84c0cec9-5924-4be7-ab54-8d7247eef990")
 		)
 		(pin "2"
-			(uuid "70053e44-5038-4456-99b9-fcc4afe9f883")
+			(uuid "90d46f12-5b5a-43cb-a65d-2ebfdf0ac7a8")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6041,10 +6051,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4380067b-3ff9-40d7-8f47-42ed9c921c39")
+			(uuid "b9387c5d-827a-41c7-b54e-263628037859")
 		)
 		(pin "2"
-			(uuid "7d7cb8e4-5570-4f07-8239-dcd3a18d3642")
+			(uuid "a61d91dd-3ece-464b-9545-e0d8d16dd4f9")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6061,7 +6071,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 105.41 0)
+		(at 54.61 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6070,7 +6080,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0f603f2-06dd-4c20-9d04-bfc7ab0f701b")
 		(property "Reference" "C5"
-			(at 58.42 104.1399 0)
+			(at 58.42 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6079,7 +6089,7 @@
 			)
 		)
 		(property "Value" "33n"
-			(at 58.42 106.6799 0)
+			(at 58.42 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6088,7 +6098,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 55.5752 109.22 0)
+			(at 55.5752 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6097,7 +6107,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 105.41 0)
+			(at 54.61 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6106,7 +6116,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 105.41 0)
+			(at 54.61 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6115,7 +6125,7 @@
 			)
 		)
 		(property "LCSC" "C21117"
-			(at 54.61 105.41 0)
+			(at 54.61 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6124,10 +6134,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "30c9c2bf-c6f8-4da4-9dfb-5e609868557d")
+			(uuid "9fbefcf8-2c1d-46b7-9851-e21b7422ba89")
 		)
 		(pin "1"
-			(uuid "9ab0fc89-8f5a-4a0f-bfd7-288c2ca0a644")
+			(uuid "75ec21df-0c02-426c-b101-50b9b0612dbe")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6144,7 +6154,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 45.72 95.25 180)
+		(at 45.72 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6153,7 +6163,7 @@
 		(fields_autoplaced yes)
 		(uuid "a44a42f8-e923-453c-987d-9951f1ae6ca3")
 		(property "Reference" "R11"
-			(at 48.26 93.9799 0)
+			(at 48.26 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6162,7 +6172,7 @@
 			)
 		)
 		(property "Value" "1500"
-			(at 48.26 96.5199 0)
+			(at 48.26 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6171,7 +6181,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 47.498 95.25 90)
+			(at 47.498 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6190,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 95.25 0)
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6189,7 +6199,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 45.72 95.25 0)
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6198,7 +6208,7 @@
 			)
 		)
 		(property "LCSC" "C22843"
-			(at 45.72 95.25 0)
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6207,10 +6217,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "cfcbd039-56ed-4e0d-8ae7-0c3119a7a1cb")
+			(uuid "f3c6d36f-8a83-4efb-a5a1-86043e3141c1")
 		)
 		(pin "2"
-			(uuid "73a1ce5d-c0ff-4fac-ae75-01ac51fb4a5a")
+			(uuid "646c780d-8a21-4389-949b-534b77bb1ef9")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6288,22 +6298,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "980a6ae0-c703-428f-8876-a4a6f9f2ce72")
+			(uuid "d6ccb0b3-1d7a-4af8-a5d4-b9f9b81d339b")
 		)
 		(pin "5"
-			(uuid "e2cb58b2-810c-427b-99c4-5a5c8b699fc3")
+			(uuid "78f9d1c1-3280-4a22-b4f9-a5fca900b5aa")
 		)
 		(pin "4"
-			(uuid "ad1c1376-9228-40bd-9c37-a19182fe1324")
+			(uuid "8261cdc3-f841-4366-acc5-d22c36f2068c")
 		)
 		(pin "3"
-			(uuid "1b164126-a467-48f8-a937-effd51970fc0")
+			(uuid "98cae2ba-824b-4f2a-af5a-f4393eafb6a5")
 		)
 		(pin "2"
-			(uuid "dee1d854-de4b-406d-a6ac-85f8c580bd25")
+			(uuid "be8cbfa8-e970-4e9b-ab9c-05530bab1c28")
 		)
 		(pin "1"
-			(uuid "c0616f37-5bd9-49bf-bed2-76297968e612")
+			(uuid "286ec0a0-1c72-48d5-80be-6a3bc968f128")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6373,7 +6383,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a82670c3-1578-4bc0-be17-3befec9b881a")
+			(uuid "b1c51fc7-3f4b-40af-bb45-2cf8d275bc05")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6471,10 +6481,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "27734131-9293-44c5-999b-0ba6b5083f19")
+			(uuid "5e3efbc8-95fc-4871-b203-f09d8828abf9")
 		)
 		(pin "2"
-			(uuid "7d556a6b-cf79-47fa-9893-e2f95b1cbb0a")
+			(uuid "642e49aa-94e8-43de-a6a2-fa6d118f2390")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6563,10 +6573,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "766140a9-b7d4-4232-8740-59639222d506")
+			(uuid "39f5de19-7034-458c-8ea2-491bccec3f00")
 		)
 		(pin "2"
-			(uuid "fb78df09-57be-4a56-9850-6a12c137f51b")
+			(uuid "c7312acc-b1d7-4e54-a53e-380fcb0c5533")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6644,22 +6654,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "51e58a9e-95a3-4d6c-a665-8f405c21f5c2")
+			(uuid "e373d4c4-9259-4252-89e2-81338bfb4b65")
 		)
 		(pin "5"
-			(uuid "71c616d1-405b-4fd6-ab60-f3e5422cc441")
+			(uuid "07f8000c-e6eb-4c9d-97bb-be56bc1b9434")
 		)
 		(pin "4"
-			(uuid "30901ce6-9432-443b-8c46-dca6bebf1436")
+			(uuid "9a2fac20-2202-4840-96e0-122ca1463c4b")
 		)
 		(pin "3"
-			(uuid "563bc7d9-8e7c-4107-96d4-80661d1e3112")
+			(uuid "19b71ff5-e2ea-43ec-b83f-9e84dd41b518")
 		)
 		(pin "2"
-			(uuid "d2ecd54e-b261-4d30-a337-2e85d56741dc")
+			(uuid "23889dd2-81d1-4612-9705-a048ea679412")
 		)
 		(pin "1"
-			(uuid "27fa844d-2571-46d9-a3aa-541e39b29662")
+			(uuid "c15d2917-d6de-4679-958c-c9c3b7849fe2")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6730,7 +6740,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63a93bef-def9-48ae-b518-a67c4dacf93d")
+			(uuid "cde9e1d6-aede-4fe7-b475-c79428f77ae4")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6810,10 +6820,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "b254e5d7-2bb0-43fe-ab84-4b2ce4152bf9")
+			(uuid "e8c11621-a847-46ee-8618-e63da76a6787")
 		)
 		(pin "1"
-			(uuid "42f076de-fdac-4778-a319-cd159ccfcccc")
+			(uuid "8e8a26f2-ad0a-4867-8b7a-875edf39f6e1")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6883,7 +6893,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "757708ed-65d9-40f5-a370-4dcdd00639eb")
+			(uuid "0a6f1f7b-40e3-4225-a1f7-05c295ae8e7e")
 		)
 		(instances
 			(project "KiCadV2"
@@ -6963,10 +6973,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "57255eaf-130c-4156-894f-8ed637195064")
+			(uuid "18fa579b-8219-41b8-99e6-0789cd555500")
 		)
 		(pin "1"
-			(uuid "4da99544-b328-4474-9a64-feaf091b78ce")
+			(uuid "7de84517-0153-4470-afb8-57abfcf3d4f1")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7038,64 +7048,64 @@
 			)
 		)
 		(pin "9"
-			(uuid "b403d6d5-11a6-496e-832d-916384900361")
+			(uuid "eb988916-3f44-41db-a877-896377e8843b")
 		)
 		(pin "15"
-			(uuid "578e80ba-41f2-4201-a489-e8fb539d0119")
+			(uuid "99bdfbbd-6416-4615-965a-78323173f4ab")
 		)
 		(pin "7"
-			(uuid "a7f8504a-84b5-44f1-a748-679794410eb4")
+			(uuid "ec99cdb1-0d3e-41ea-99eb-d3613dd6a83b")
 		)
 		(pin "5"
-			(uuid "fc35fe31-4114-4b7d-beb4-271514274a31")
+			(uuid "4cf516b0-b189-4c93-9e75-efe9d6f66426")
 		)
 		(pin "1"
-			(uuid "09d52fc2-c0c9-45c1-a9f2-2ba2e54b48e1")
+			(uuid "fbad27f2-ef98-437a-9d61-f21625feb7b9")
 		)
 		(pin "8"
-			(uuid "12e737f7-227d-4e25-83f3-b5cb23dfd668")
+			(uuid "40f9be78-b528-4f55-85ae-7f06bcd0c465")
 		)
 		(pin "6"
-			(uuid "0ea6afc0-0b83-463a-b7ca-5c1f5c4b8da1")
+			(uuid "0d8b9ace-5820-4e60-9ffe-aee8c36ce884")
 		)
 		(pin "10"
-			(uuid "639a3865-e067-47f0-a192-79b0637b200a")
+			(uuid "e1511cf2-8b15-42c7-b00b-042546f53282")
 		)
 		(pin "2"
-			(uuid "a45159ed-e4b9-427a-a6ad-cedfe61e0629")
+			(uuid "b8c98645-c42d-40b9-8e8f-55caed0ef99e")
 		)
 		(pin "3"
-			(uuid "dde70ad9-2264-43e5-b529-0c4e54e96360")
+			(uuid "487f723b-3e1f-45b2-a564-14c5701114f5")
 		)
 		(pin "4"
-			(uuid "aaa6812d-8508-4105-ba87-4b50d7c3e9e9")
+			(uuid "23e7815c-7db4-454e-a509-70f57452f8f2")
 		)
 		(pin "16"
-			(uuid "5eea4d0d-5679-49bc-90f8-c72fb4f97cd3")
+			(uuid "b4eeddca-1117-474f-b06d-5bea8ce535a0")
 		)
 		(pin "14"
-			(uuid "566651fe-c4a8-409f-920e-ca42ea779af8")
+			(uuid "00f658e7-742c-4b31-a40b-8add6236ced6")
 		)
 		(pin "12"
-			(uuid "2e50ed28-652c-42ff-943f-461f1df787f8")
+			(uuid "bfb4f435-f3af-45e4-9dd8-4b79fb5295d1")
 		)
 		(pin "13"
-			(uuid "9e7be13b-7812-4bcf-a4fc-d68e212b2cf5")
+			(uuid "83411ddf-23f8-44d9-a988-73e0b53be43f")
 		)
 		(pin "18"
-			(uuid "143df4ef-3117-4b47-9d21-b01567d0d060")
+			(uuid "1b35bf2e-4fb0-4c9b-90b8-e9d29dbd8cce")
 		)
 		(pin "20"
-			(uuid "4c5fd8d3-32d2-4b1f-809d-68bd25a9febb")
+			(uuid "003c8760-7070-4688-a37b-2717094a68b9")
 		)
 		(pin "19"
-			(uuid "8e4cb230-bbc5-4a69-953e-77fd7cff56b0")
+			(uuid "5dbd4283-eda0-4ac5-a661-b4e73cd3c63a")
 		)
 		(pin "11"
-			(uuid "8ce85412-a18f-41a5-a76e-e05f624ebcce")
+			(uuid "5a924760-8569-46eb-96fd-07a41abf1fe7")
 		)
 		(pin "17"
-			(uuid "18215bfd-98e9-46fb-b199-1bebc2580591")
+			(uuid "b3d89e50-3332-4920-9cb2-96928c4a03e1")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7175,10 +7185,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "43dd1a55-a6d7-4dea-93bb-1f57e6ca02bc")
+			(uuid "6e249bcd-6f3e-415f-b2de-d9a2dc5811b8")
 		)
 		(pin "1"
-			(uuid "4ce9352e-96e0-4676-854d-cc5228f3e48a")
+			(uuid "765c025e-5001-4c0f-a967-3355e99d5525")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7249,7 +7259,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "43a4061f-bfa1-4615-95e4-9af404154a79")
+			(uuid "e432b844-08b5-4991-901a-b45592c1e633")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7319,7 +7329,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9371560-2c4c-4a72-8879-5079c581795d")
+			(uuid "9ad35bd4-d52b-4114-a987-6c8a4b647fc3")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7417,10 +7427,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "8434197b-0f8f-4824-864b-b0d2a0a34221")
+			(uuid "4ab6b68e-24d2-4d77-a2ad-f5b87b99e988")
 		)
 		(pin "2"
-			(uuid "e333a508-90e3-4f59-89f2-b73eb7829ca2")
+			(uuid "41ff29b9-4fe1-40c7-a09b-a8a6af9ae18d")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7490,7 +7500,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3332e5de-1814-4f6b-afd1-a402c1790f8e")
+			(uuid "ebac60f0-746c-4d83-af3f-dcabf4bbf171")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7561,7 +7571,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "88954712-55d4-4b0d-9284-7d02d0ee839e")
+			(uuid "c6a4e438-687b-4ff9-8cac-acbcb3e025d5")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7639,22 +7649,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "3e7fcc36-11c7-45d3-8f85-7f8066d649f9")
+			(uuid "9f60720e-9f1d-4ceb-b92f-0a222f6be20b")
 		)
 		(pin "5"
-			(uuid "9ea19ce9-bfe2-4409-a3a1-0c607bea7697")
+			(uuid "edce5e4a-2502-4b5a-8f86-c32b0eba4c22")
 		)
 		(pin "4"
-			(uuid "8f50750c-b45d-463f-9db3-58be467668c0")
+			(uuid "c058334f-7021-49a5-9f17-041af4454c8d")
 		)
 		(pin "3"
-			(uuid "6fa4cda3-c23a-4f4a-91a4-f7fb87a2236c")
+			(uuid "8bc7f0f0-f68d-4a63-b6af-f8b90cc17730")
 		)
 		(pin "2"
-			(uuid "e9a1d0a3-556f-4eb5-95bf-a00ca3060c3c")
+			(uuid "a22f577c-c710-4462-a662-d185a3bb148c")
 		)
 		(pin "1"
-			(uuid "c6f7b418-f86a-4737-b592-ab09599cb871")
+			(uuid "903ff46c-cf4d-4d34-aa72-afceb0f38333")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7734,10 +7744,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "73af1aab-897a-4a5e-8337-4febd16cadcc")
+			(uuid "701efb9d-c93a-405f-be32-2b04972239a1")
 		)
 		(pin "1"
-			(uuid "bdf1fd82-8227-4335-a343-216b166d552a")
+			(uuid "3d41c9f9-a2a8-40ea-8173-1eef4dc897e0")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7763,7 +7773,7 @@
 		(fields_autoplaced yes)
 		(uuid "e747808f-7e9e-4743-989c-c9e828a383f8")
 		(property "Reference" "U14"
-			(at 231.1511 144.78 0)
+			(at 231.151 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7771,7 +7781,7 @@
 			)
 		)
 		(property "Value" "74LV08AT14-13"
-			(at 231.1511 142.24 0)
+			(at 231.151 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7818,7 +7828,7 @@
 			(uuid "98fb93b2-4f91-48c4-b4e6-946cfbd43041")
 		)
 		(pin "6"
-			(uuid "829123e1-e5c8-4dc2-a5df-91c19d90e1fe")
+			(uuid "fdd77f55-48eb-4b71-9ef4-2b34d91f55ba")
 		)
 		(pin "9"
 			(uuid "272ab256-8168-47b0-9d99-16ec48329b95")
@@ -7833,7 +7843,7 @@
 			(uuid "68fd75a5-6900-442f-bf0f-f331165e36ba")
 		)
 		(pin "5"
-			(uuid "83e1b48d-be52-4037-ad8e-b9b431a5036c")
+			(uuid "c865ac01-6f7b-47db-8709-183e0752dcb0")
 		)
 		(pin "9"
 			(uuid "1c371e78-2e08-4afe-b4f3-ca2fd1578938")
@@ -7845,7 +7855,7 @@
 			(uuid "28f10cb4-235a-4f13-887e-9c8fbbeea6f6")
 		)
 		(pin "4"
-			(uuid "2a2785a8-114d-4a54-aa8b-c49986082148")
+			(uuid "83c03a88-54d8-493b-b834-19b84a92ebff")
 		)
 		(pin "1"
 			(uuid "3f6dab77-e461-4df5-a362-42f680e27b44")
@@ -7928,7 +7938,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "35ed5914-295a-4f0c-9c57-732c2a9eb8ab")
+			(uuid "ba0a3e75-13b2-44e4-b7d2-d95a814c0d8a")
 		)
 		(instances
 			(project "KiCadV2"
@@ -7998,7 +8008,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "93b942d8-b8f1-4785-87c5-020dc395cb77")
+			(uuid "fe2a74a3-9e04-4563-9018-cc84e03017c3")
 		)
 		(instances
 			(project "KiCadV2"

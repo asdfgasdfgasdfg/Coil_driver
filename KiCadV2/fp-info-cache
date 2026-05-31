@@ -1,4 +1,4 @@
-26756385751216764
+26761726393681759
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70777,6 +70777,13 @@ Arduino UNO R3
 32
 32
 Module
+Arduino_UNO_R3_ConnOnly_Coil_Driver
+Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+Arduino UNO R3
+0
+18
+18
+Module
 Arduino_UNO_R3_WithMountingHoles
 Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
 Arduino UNO R3
@@ -89775,6 +89782,13 @@ WSON NoLead
 11
 11
 Package_SON
+WSON-10-1EP_3x3mm_P0.5mm_EP1.6x2mm_1
+WSON, 10 Pin (http://www.ti.com/lit/gpn/tps63030#page=24), generated with kicad-footprint-generator ipc_noLead_generator.py
+WSON NoLead
+0
+10
+10
+Package_SON
 WSON-10-1EP_4x3mm_P0.5mm_EP2.2x2mm
 10-Lead Plastic WSON, 4x3mm Body, 0.5mm Pitch (http://www.ti.com/lit/ds/symlink/lm4990.pdf)
 WSON 0.5
@@ -89795,6 +89809,13 @@ WSON NoLead Texas_DPR0010A
 0
 25
 11
+Package_SON
+WSON-10-1_3x3mm_P0.5mm_1.6x2mm
+WSON, 10 Pin (http://www.ti.com/lit/gpn/tps63030#page=24), generated with kicad-footprint-generator ipc_noLead_generator.py
+WSON NoLead
+0
+10
+10
 Package_SON
 WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65
 WSON-12 http://www.ti.com/lit/ds/symlink/lm27762.pdf
