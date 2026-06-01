@@ -536,6 +536,10 @@
       "/PerCoil/AH": [
         "HF"
       ],
+      "/PerCoil/AHS": [
+        "HF",
+        "Power"
+      ],
       "/PerCoil/AL": [
         "HF"
       ],
@@ -608,6 +612,14 @@
       ],
       "/PerCoil1/~{OC1}": [
         "HF"
+      ],
+      "/SenseL": [
+        "HF",
+        "Power"
+      ],
+      "/SenseR": [
+        "HF",
+        "Power"
       ],
       "/Vsq": [
         "HF"
