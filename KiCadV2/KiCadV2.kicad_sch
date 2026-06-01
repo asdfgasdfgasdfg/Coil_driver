@@ -4745,6 +4745,19 @@
 		)
 		(uuid "08c7294d-77c4-40e1-a6a0-f107f2fec924")
 	)
+	(text "- Internal connections done\n- Spacing, shorts, nets, etc verified\n- Grouped"
+		(exclude_from_sim no)
+		(at 82.55 116.332 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "08e9762e-e63f-452c-b1f3-943e342ef5e1")
+	)
 	(text "12V Boost for HIP4080 & Arduino Vin"
 		(exclude_from_sim no)
 		(at 41.402 116.586 0)
@@ -4866,7 +4879,7 @@
 	)
 	(text "Indicator LEDS"
 		(exclude_from_sim no)
-		(at 116.078 156.464 0)
+		(at 33.274 155.702 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4883,6 +4896,19 @@
 			)
 		)
 		(uuid "bd9b9fa9-2748-4132-9281-e6d3571eb95b")
+	)
+	(text "- Internal connections done\n- Spacing, shorts, nets, etc verified\n- Grouped"
+		(exclude_from_sim no)
+		(at -21.844 127.762 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "c93cd30c-ad60-424b-ae4c-40cef7e0254c")
 	)
 	(text "B1 || C1"
 		(exclude_from_sim no)
