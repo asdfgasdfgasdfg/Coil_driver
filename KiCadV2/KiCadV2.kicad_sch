@@ -6512,7 +6512,7 @@
 		)
 		(uuid "52913f4e-dda2-455b-8c34-827e62fc0d2f")
 	)
-	(label "PWM6"
+	(label "PWM2"
 		(at 247.65 38.1 180)
 		(effects
 			(font
@@ -6552,7 +6552,7 @@
 		)
 		(uuid "66168762-37b4-4413-bca7-d7e8c88507cb")
 	)
-	(label "PWM5"
+	(label "PWM1"
 		(at 247.65 43.18 180)
 		(effects
 			(font
@@ -6572,7 +6572,7 @@
 		)
 		(uuid "6b6f3547-1aae-485b-9381-8e27bf9ebe2b")
 	)
-	(label "PWM1"
+	(label "PWM5"
 		(at 247.65 58.42 180)
 		(effects
 			(font
@@ -6895,7 +6895,7 @@
 		)
 		(uuid "be9164d5-90e5-4340-8c73-ae0e146ddcef")
 	)
-	(label "PWM2"
+	(label "PWM6"
 		(at 247.65 55.88 180)
 		(effects
 			(font
