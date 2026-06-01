@@ -2341,6 +2341,19 @@
 		)
 		(uuid "4269c045-7aba-4d3d-8d75-cc813c7455d4")
 	)
+	(text "- Internal connections done\n- Spacing, shorts, nets, etc verified\n- Grouped"
+		(exclude_from_sim no)
+		(at 39.116 127.508 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "49423e22-da7f-41fa-9b59-ae846372838e")
+	)
 	(text "Bootstrap caps & diodes"
 		(exclude_from_sim no)
 		(at 271.78 21.59 0)
