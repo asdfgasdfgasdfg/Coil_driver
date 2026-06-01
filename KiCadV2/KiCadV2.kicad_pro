@@ -491,7 +491,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.3,
+        "clearance": 0.25,
         "name": "HF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
