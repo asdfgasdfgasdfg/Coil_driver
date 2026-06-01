@@ -4755,6 +4755,19 @@
 		)
 		(uuid "118de7a5-5ab4-45a8-b8ba-6738568655bd")
 	)
+	(text "- Internal connections done\n- Spacing, shorts, nets, etc verified\n- Grouped"
+		(exclude_from_sim no)
+		(at -26.416 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "2ecfc522-ce13-4c96-8a87-3e3fe71e8f66")
+	)
 	(text "PWM 1MHz Triangle wave generator"
 		(exclude_from_sim no)
 		(at 102.362 121.412 0)
@@ -4804,6 +4817,19 @@
 			)
 		)
 		(uuid "82f1a3ec-b12d-4f90-a368-cf01c0e1bb00")
+	)
+	(text "- Internal connections done\n- Spacing, shorts, nets, etc verified\n- Grouped"
+		(exclude_from_sim no)
+		(at 12.954 8.382 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "83e1f381-e376-4abf-83a4-b174093d2c0c")
 	)
 	(text "Boost SMPS set to 11-12V for the HIP4080A mosfet driver"
 		(exclude_from_sim no)
