@@ -4825,6 +4825,19 @@
 		)
 		(uuid "9c77f58d-09a7-4681-91a4-26b2b33438bd")
 	)
+	(text "- Internal connections done\n- Spacing, shorts, nets, etc verified\n- Grouped"
+		(exclude_from_sim no)
+		(at 132.334 68.834 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "9dccfc34-45ba-4252-ab75-e3cd0222a4ca")
+	)
 	(text "Indicator LEDS"
 		(exclude_from_sim no)
 		(at 116.078 156.464 0)
@@ -6676,7 +6689,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "98e77465-f871-4a10-84c6-769bf529afe2")
+		(uuid "98e77465-f871-4a10-84c6-769bf529afe3")
 	)
 	(label "C2"
 		(at 229.87 153.67 270)
