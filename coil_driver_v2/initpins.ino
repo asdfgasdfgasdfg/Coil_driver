@@ -1,0 +1,20 @@
+void initpins(){
+    digitalWrite(PWM1, 0);
+    pinMode(PWM1, OUTPUT);
+    digitalWrite(PWM2, 0);
+    pinMode(PWM2, OUTPUT);
+    digitalWrite(PWM3, 0);
+    pinMode(PWM3, OUTPUT);
+    digitalWrite(PWM4, 0);
+    pinMode(PWM4, OUTPUT);
+    digitalWrite(CLK, 0);
+    pinMode(CLK, OUTPUT);
+    digitalWrite(DIN, 0);
+    pinMode(DIN, OUTPUT);
+    digitalWrite(D1, 0);
+    pinMode(D1, OUTPUT);
+    digitalWrite(D2, 0);
+    pinMode(D2, OUTPUT);
+    digitalWrite(D3, 0);
+    pinMode(D3, OUTPUT);
+}
